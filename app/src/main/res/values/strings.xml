@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">本地小模型接入工具</string>
+    <string name="notification_channel_name">本地模型服务</string>
+    <string name="action_stop_server">停止服务</string>
+
+    <string name="menu_pick_model">选择模型</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_clear_chat">清空对话</string>
+
+    <string name="hint_input">输入消息…</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_stop">停止</string>
+
+    <string name="settings_title">设置</string>
+    <string name="section_model">模型</string>
+    <string name="section_engine">推理参数</string>
+    <string name="section_server">反代服务</string>
+
+    <string name="label_current_model">当前模型</string>
+    <string name="btn_choose_model">选择本地模型文件</string>
+    <string name="hint_model_supported">支持 .gguf（llama.cpp，绝大多数本地小模型）与 .litertlm / .task（与 Google AI Edge Gallery 相同格式）</string>
+    <string name="label_installed">已导入的模型</string>
+
+    <string name="label_accelerator">加速器</string>
+    <string name="acc_cpu">CPU</string>
+    <string name="acc_gpu">GPU</string>
+    <string name="acc_npu">NPU</string>
+    <string name="hint_accelerator">仅 .litertlm / .task 支持 GPU/NPU；初始化失败会自动回退到 CPU</string>
+    <string name="label_max_tokens">上下文长度 maxNumTokens</string>
+    <string name="label_top_k">topK</string>
+    <string name="label_top_p">topP</string>
+    <string name="label_temperature">temperature</string>
+    <string name="label_system_prompt">系统提示词</string>
+    <string name="label_enable_thinking">开启思考通道（thinking）</string>
+    <string name="label_enable_vision">多模态输入（图像/音频）</string>
+    <string name="hint_enable_vision">仅多模态 LiteRT 模型（.litertlm/.task，如 Gemma 3n）有效；GGUF 运行时不支持</string>
+    <string name="btn_attach">添加图片</string>
+    <string name="btn_remove">移除</string>
+    <string name="empty_hint">选择本地模型后即可开始对话\n支持 .gguf / .litertlm / .task</string>
+    <string name="show_thinking">思考过程</string>
+    <string name="menu_export_log">导出日志</string>
+    <string name="menu_licenses">开源许可</string>
+    <string name="toast_log_exported">日志已导出</string>
+    <string name="toast_log_export_failed">日志导出失败</string>
+
+    <string name="label_server_enabled">启用反代服务</string>
+    <string name="label_server_port">端口</string>
+    <string name="label_server_lan">允许局域网访问（否则仅本机回环）</string>
+    <string name="label_api_key">API Key（留空表示不校验）</string>
+    <string name="label_server_url">接入地址</string>
+    <string name="hint_server_change_needs_restart">修改端口/绑定/Key 后需重启服务生效</string>
+    <string name="btn_copy">复制</string>
+    <string name="btn_regen_key">重置</string>
+    <string name="btn_restart_server">重启服务以应用</string>
+    <string name="toast_copied">已复制</string>
+    <string name="toast_key_regenerated">已生成新的 API Key</string>
+</resources>
